@@ -12,6 +12,14 @@
  
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <!-- Animate CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+
   <title>Materialize Ninja</title>
   
   <style>
@@ -99,7 +107,7 @@
 
   <!-- photo / grid -->
   <section class="container section scrollspy" id="photos">
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInLeft animate__slower">
 
       <!-- Div will be 12 columns in small screens and 4 for large screens -->
       <div class="col s12 l4">
@@ -117,7 +125,7 @@
     <!-- End Row -->
 
     <!-- Begin Row -->
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInRight animate__slower">
 
       <!-- Div will be 12 columns in small screens and 4 for large screens -->
       <div class="col s12 l4 push-l7 offset-l1">
@@ -134,7 +142,7 @@
     <!-- End Row -->
 
     <!-- Begin Row -->
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInLeft animate__slower">
 
       <!-- Div will be 12 columns in small screens and 4 for large screens -->
       <div class="col s12 l4">
@@ -162,7 +170,7 @@
 
   <!-- services / tabs -->
   <section class="container section scrollspy" id="services">
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp animate__slower">
       <div class="col s12 l4">
         <h2 class="indigo-text text-darken-4">What I do...</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio facere, tempora temporibus dolorum aperiam tempore a nesciunt! Tempora, modi repellendus beatae praesentium omnis tenetur nobis provident ducimus quae in.</p>
@@ -211,7 +219,7 @@
 
   <!-- contact form -->
   <section class="container section scrollspy" id="contact">
-    <div class="row">
+    <div class="row wow animate__animated animate__flip animate__slower">
       <div class="col s12 l5">
         <h2 class="indigo-text text-darken-4">Get In Touch</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quibusdam temporibus facilis, iste distinctio ut labore repellendus minima placeat deserunt sed nulla iure, magni dolorum perferendis similique quod libero aliquid.</p>
@@ -314,5 +322,11 @@
     });
 
   </script>
+
+  <!-- WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> new WOW().init(); </script>
+
+
 </body>
 </html>
