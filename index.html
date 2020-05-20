@@ -21,40 +21,9 @@
   />
 
   <!-- Custom CSS -->
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <style>
-  
 
-    header{
-      background-image: url(img/man.jpg);
-      background-size: cover;
-      background-position: center;
-      min-height: 1000px;
-    }
-
-    .section{
-      /* View Width */
-      padding-top: 4vw;
-      padding-bottom: 4vw;
-    }
-
-    .tabs .indicator {
-      background-color: #1a237e;
-    }
-
-    .tabs .tab a:focus, .tabs .tab a:focus.active{
-      background: transparent;
-    }
-
-    @media screen and (max-width: 670px){
-      header{
-        min-height: 500px;
-      }
-    }
-
-  
-  </style>
   <title>Materialize Ninja</title>
   
 </head>
@@ -62,7 +31,7 @@
 
   <!-- navbar -->
   <header>
-    <nav class="nav-wrapper transparent">
+    <nav class="nav-wrapper transparent white-text">
       <div class="container">
         <a href="#" class="brand-logo">Materialize Ninja</a>
 
@@ -72,7 +41,7 @@
         </a>
 
         <!-- The Navigation Bar will hide for medium and small size screens -->
-        <ul class="right hide-on-med-and-down">
+        <ul id="nav_menu" class="right hide-on-med-and-down">
           <li><a href="#photos">Photos</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -321,6 +290,21 @@
       });
       $(".tooltipped").tooltip();
       $(".scrollspy").scrollSpy();
+
+      $(window).scroll(function(){
+
+        if($(window).scrollTop() > 700){
+          $("nav").addClass("white");
+          $(".brand-logo").addClass("black-text");
+          $("#nav_menu a").addClass("black-text");
+          $("nav").removeClass("transparent white-text");
+        }else{
+          $("nav").addClass("transparent white-text");
+          $(".brand-logo").removeClass("black-text");
+          $("#nav_menu a").removeClass("black-text");
+        }
+
+      });
 
     });
 

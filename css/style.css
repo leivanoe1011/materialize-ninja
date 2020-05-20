@@ -7,6 +7,7 @@ header{
   min-height: 1000px;
 }
 
+
 .section{
   /* View Width */
   padding-top: 4vw;
@@ -19,6 +20,13 @@ header{
 
 .tabs .tab a:focus, .tabs .tab a:focus.active{
   background: transparent;
+}
+
+nav{
+  position: fixed;
+  padding:0px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 
 @media screen and (max-width: 670px){
